@@ -1,6 +1,8 @@
 from building import *
 import os
 
+cwd = GetCurrentDir()
+src = Glob('*.c')
 cwd     = GetCurrentDir()
 CPPPATH = [cwd]
 src = ['main.c']
