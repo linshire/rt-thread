@@ -167,11 +167,11 @@ menu "On-chip Peripheral Drivers"
                     config BSP_I2C4_SCL_PIN
                         int "i2c4 scl pin number"
                         range 1 176
-                        default 60
+                        default 12
                     config BSP_I2C4_SDA_PIN
                         int "i2c4 sda pin number"
                         range 1 176
-                        default 61
+                        default 13
                 endif
         endif
 
