@@ -117,6 +117,48 @@ menu "On-chip Peripheral Drivers"
                     endif
             endif
 
+    menuconfig BSP_USING_SOFT_I2C
+        config BSP_USING_SOFT_I2C
+            bool "Enable SOFT IIC"
+            select RT_USING_SOFT_I2C
+            default y
+
+            if BSP_USING_SOFT_I2C
+              config BSP_USING_SOFT_I2C1
+              bool "Enable soft i2c1"
+              default y
+
+                if BSP_USING_SOFT_I2C1
+                        config BSP_SOFT_I2C1_SCL_PIN
+                            int "i2c1 soft scl pin number"
+                            range 1 216
+                            default 34
+
+                        config BSP_SOFT_I2C1_SDA_PIN
+                            int "i2c2 soft sda pin number"
+                            range 1 216
+                            default 34
+
+                endif
+
+            config BSP_USING_SOFT_I2C2
+            bool "Enable soft i2c2"
+            default y
+                if BSP_USING_SOFT_I2C2
+   
+                    config BSP_SOFT_I2C2_SCL_PIN
+                        int "i2c1 soft scl pin number"
+                        range 1 216
+                        default 34
+
+                    config BSP_SOFT_I2C2_SDA_PIN
+                        int "i2c2 soft sda pin number"
+                        range 1 216
+                        default 34
+           
+                endif
+            endif
+
     menuconfig BSP_USING_SPI
         config BSP_USING_SPI
             bool "Enable SPI"

@@ -8,8 +8,8 @@
 #define AUTOMAC0  0x52
 #define AUTOMAC1  0x54
 #define AUTOMAC2  0x00
-#define AUTOMAC3  0x78
-#define AUTOMAC4  0xe7
-#define AUTOMAC5  0x23
+#define AUTOMAC3  0x61
+#define AUTOMAC4  0x5c
+#define AUTOMAC5  0x47
 
 #endif

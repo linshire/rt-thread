@@ -250,7 +250,6 @@
 
 /* Other */
 
-
 /* Signal IO */
 
 
@@ -269,6 +268,13 @@
 #define BSP_USING_I2C
 #define BSP_USING_I2C4
 #define HW_I2C4_BAUDRATE_100kHZ
+#define BSP_USING_SOFT_I2C
+#define BSP_USING_SOFT_I2C1
+#define BSP_SOFT_I2C1_SCL_PIN 34
+#define BSP_SOFT_I2C1_SDA_PIN 35
+#define BSP_USING_SOFT_I2C2
+#define BSP_SOFT_I2C2_SCL_PIN 36
+#define BSP_SOFT_I2C2_SDA_PIN 37
 #define BSP_USING_SPI
 #define BSP_USING_SPI3
 #define BSP_USING_SPI8
